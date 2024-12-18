@@ -1,0 +1,46 @@
+html {
+    font-family: sans-serif;
+}
+
+.loading-app-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8ff;
+}
+
+.ant-result {
+    padding: 48px 32px;
+}
+
+.ant-result-icon {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.ant-result-title {
+    color: #000000d9;
+    font-size: 24px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.ant-result-extra {
+    margin: 24px 0 0;
+    text-align: center;
+}
+
+
+.anticon-spin,.anticon-spin:before {
+    animation: loadingCircle 1s linear infinite;
+    display: inline-block
+}
+
+@keyframes loadingCircle {
+    to {
+        transform: rotate(1turn)
+    }
+}
